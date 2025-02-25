@@ -80,13 +80,13 @@
                 <label for="phone">Phone</label>
                 <input type="tel" id="phone" name="phone" placeholder="Enter Your Contact Number" required>
             </div>
-            <button type="submit">Submit</button>
+            <button id="submit" type="submit">Submit</button>
 
 <script>
-document.getElementById("register-button").addEventListener("click", function() {
+document.getElementById("submit").addEventListener("click", function() {
     gtag("event", "register_click", {
         event_category: "engagement",
-        event_label: "Register Button",
+        event_label: "Submit Button",
     });
     alert("Event Registered");
 });
